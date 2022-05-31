@@ -4,7 +4,7 @@ import { header } from "express/lib/request";
 
 const PORT = 4000;
 const app = express();
-const logger = logger("dev");
+const morgan = logger("dev");
 
 const handleHome = (req,res) => {
     return res.send("<h1>I love middlewares.</h1>");
@@ -18,7 +18,7 @@ const handleLogin = (req,res) => {
 
 const handleListening = () => console.log(`Server listening on port http://localhost:${PORT} --Wetube server--`);
 
-app.use(logger);
+app.use(morgan);
 app.get("/",handleHome);
 app.get("/login", handleLogin);
 
