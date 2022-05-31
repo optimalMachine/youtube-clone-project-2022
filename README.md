@@ -7,15 +7,21 @@
 wetube is built using NodeJS, Express, Mongo and ES6
 
 / -> Home
+
 /join -> Signup
+
 /login -> Login
+
 /search -> Search
 
 /users/edit -> Edit User
+
 /users/delete -> Delete User
 
 /videos/watch -> Watch Video
+
 /videos/edit -> Edit Video
+
 /videos/delete -> Delete Video
 
 #### All created by Jiuk Choi
